@@ -11,9 +11,6 @@ function kilometerToMeter(km){
         console.log("Pls put a valid number from 0 ~")
 }    
     
-var result = kilometerToMeter(6)
-console.log(result);
-
 
 //budgetCalculator
 function budgetCalculator(watch, phone, laptop){
@@ -25,9 +22,8 @@ function budgetCalculator(watch, phone, laptop){
 
     return totalCost;
 }
-var result = budgetCalculator(1,2,3)
-console.log(result);
-
+//var result = budgetCalculator(1,2,3)
+//console.log(result);
 
 
 
@@ -55,10 +51,6 @@ function hotelCost(numDays){
 
     return cost;
 }
-var totalCost = hotelCost(22);
-console.log(totalCost);
-
-
 
 
 
@@ -70,5 +62,3 @@ var megaFriend = function(myFriend){
   });
     return longest;
 }
-longName = megaFriend(myFriend);
-console.log(longName);
