@@ -4,12 +4,15 @@
 //kilometerToMeter
 function kilometerToMeter(km){
     var meter = km * 1000;
-    return meter;
-}
-var result = kilometerToMeter(5)
+    if(km > 1){
+        return meter;
+    }
+    else 
+        console.log("Pls put a valid number from 0 ~")
+}    
+    
+var result = kilometerToMeter(6)
 console.log(result);
-
-
 
 
 //budgetCalculator
@@ -24,8 +27,6 @@ function budgetCalculator(watch, phone, laptop){
 }
 var result = budgetCalculator(1,2,3)
 console.log(result);
-
-
 
 
 
@@ -61,20 +62,13 @@ console.log(totalCost);
 
 
 
-
-
 //megaFriend
-
-var myFriend = ['Imran', 'Skylab', 'MdUllah', 'Rumjhum', 'Sony'];
-function megaFriend(myFriend){
-        var longestName = "";
-    
-    for(var i = 0; i < myFriend.length; i++){
-            if(myFriend[i] > longestName){
-                longestName = myFriend[i];
-            }
-    }
-    return longestName;
+var myFriend = ["Imran", "Skylab", "Md.Ullah", "Rumjhum", "Sony"];
+var megaFriend = function(myFriend){
+    var longest = myFriend.reduce(function(a,b){
+    return (a.length > b.length) ? a : b;
+  });
+    return longest;
 }
-var megaName = megaFriend(myFriend);
-console.log(megaName);
+longName = megaFriend(myFriend);
+console.log(longName);
